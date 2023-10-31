@@ -1,0 +1,82 @@
+@import "./variables.module.scss";
+
+body {
+  font-family: $font-family;
+  padding: 0;
+  margin-top: 0px;
+}
+
+h1 {
+  color: $info-color;
+}
+
+.display-in-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.appBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 60px;
+  border-bottom: 1px solid $light-gray;
+  font-size: 12px;
+  font-weight: 500;
+
+  .crypto-globals {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .global-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 0px 20px 0px 0px;
+      .tile {
+        text-transform: capitalize;
+      }
+      .value {
+        margin-left: 10px;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.page-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  position: relative;
+
+  .dropdown {
+    position: absolute;
+    top: 40;
+    right: 0;
+    background: $lighter-gray;
+    min-height: 100px;
+    min-width: 300px;
+    border-radius: 5px;
+
+    .dropdown-body {
+      padding: 20px 30px;
+
+      .tending-coins {
+        .title {
+          font-weight: 500;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        .coin-row {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
