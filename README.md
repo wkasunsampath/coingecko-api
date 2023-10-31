@@ -4,7 +4,7 @@ Following assumptions and decisions were made while developing this:
 
 - Responsiveness of the UI was not considered.
 - When writing the test cases, button clicks and data loading was not tested due to limited timeline.
-- The application was built in way to function without an .env file.
+- The application was built in way to function without a .env file.
 
 ![My Image](public/UI.PNG)
 
